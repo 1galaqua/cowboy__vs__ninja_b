@@ -9,11 +9,6 @@ namespace ariel{
         public:
             Character(const std::string& name, const Point& location);
             virtual ~Character() {};
-            
-            Character(const Character&) = delete; // Delete copy constructor
-            Character& operator=(const Character&) = delete; // Delete copy assignment operator
-            Character(Character&&) = delete; // Delete move constructor
-            Character& operator=(Character&&) = delete; // Delete move assignment operator
 
             virtual std::string print() const ;
             virtual double distance(const Character* other) const;
